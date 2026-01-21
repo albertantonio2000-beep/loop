@@ -20,8 +20,10 @@ main{
     flex-grow: 1;
 }
 .container{
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*--------------delivery--------------*/
@@ -133,4 +135,42 @@ main{
     text-align: center;
     padding-top: 193px;
     padding-bottom: 107px;
+}
+
+@media(max-width:1200px){
+    .catalog{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 23%;
+    }
+    .card img {
+        width: 90%;
+    }
+}
+
+@media(max-width:768px){
+    .man-woman .container{
+        flex-direction: column;
+    }
+    .man,
+    .woman{
+        width: 100%;
+    }
+    .man-woman{
+    background: linear-gradient(180deg, #f9f6f1 0%, #f9f6f1 50%, #f9e0e0 50%, #f9e0e0 100%);
+}
+}
+
+.card{
+    width: 30%;
+}
+
+@media(max-width:576px){
+    .card{
+        width: 45%;
+    }
+    .card h3{
+        font-size: 12px;
+    }
 }
